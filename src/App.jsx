@@ -30,9 +30,9 @@ function App() {
   };
 
   return (
-    <main className="grid place-items-center bg-blue-900 h-full p-4">
+    <main className="grid place-items-center place-content-center bg-blue-900 h-full p-4">
       <div
-        className="bg-blue-500 text-center px-6 py-8 pb-16 sm:px-10 sm:py-12 sm:pb-20 rounded-xl shadow-md relative max-w-[540px] data-[loading='true']:animate-pulse"
+        className="bg-blue-500 text-center px-6 py-8 pb-16 sm:px-10 sm:py-12 sm:pb-20 rounded-xl shadow-md relative max-w-[540px] data-[loading='true']:animate-pulse mb-14"
         data-loading={isLoading}>
         <h1 className="text-xs text-neon-green uppercase tracking-[.25em] mb-6">
           Advice #{data?.id ?? '999'}
@@ -52,6 +52,20 @@ function App() {
           <img src={DiceIcon} alt="" />
         </button>
       </div>
+      <p className="text-light-cyan text-sm text-center">
+        Challenge by{' '}
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          className="underline">
+          Frontend Mentor
+        </a>
+        . Coded by{' '}
+        <a href="https://github.com/dragi-ns" className="underline">
+          dragi-ns
+        </a>
+        .
+      </p>
     </main>
   );
 }
