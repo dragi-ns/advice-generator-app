@@ -47,8 +47,8 @@ function App() {
         <button
           className="bg-neon-green p-5 rounded-full absolute z-10 left-1/2 -bottom-8 -translate-x-1/2 shadow-lg hover:shadow-[0_0_30px_0px_rgba(82,255,168,1)] transition-shadow origin-center disabled:shadow-none"
           disabled={isLoading}
-          onClick={getNewAdvice}>
-          <span className="hidden">Get new advice</span>
+          onClick={getNewAdvice}
+          aria-label="Get new advice">
           <img src={DiceIcon} alt="" />
         </button>
       </div>
